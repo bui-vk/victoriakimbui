@@ -1,0 +1,77 @@
+/* Define your color variables */
+:root {
+    --primary-color: #354649;   /* Dark blue */
+    --secondary-color: #6C7A89; /* Lighter blue */
+    --accent-color: #A3C6C4;    /* Aqua */
+    --background-color: #E0E7E9; /* Light gray */
+}
+
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    /* Use your color variables */
+    background-color: var(--background-color);
+    color: var(--primary-color);
+    /* Add any additional styles for the body */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'League Spartan', sans-serif;
+    /* Use your color variables */
+    color: var(--primary-color);
+    /* Use League Spartan for headings */
+}
+
+header {
+    background-color: var(--primary-color);
+    color: white;
+    /* Use your color variables */
+    /* Add styles for the header */
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+footer {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    /* Use your color variables */
+    padding: 20px 0;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-section,
+.right-section {
+    width: 45%;
+}
+
+.left-section p {
+    margin-bottom: 10px;
+}
+
+.right-section ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.right-section ul li {
+    margin-bottom: 5px;
+}
