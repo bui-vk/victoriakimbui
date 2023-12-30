@@ -58,6 +58,47 @@ nav ul li a {
     background-color: #6C7A89; /* Blueish Grey */
 }
 
+/* Project Section */
+#projects {
+    background-color: #f2f2f2;
+    padding: 40px;
+    margin: 20px 0;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#projects h2 {
+    text-align: left;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #333333;
+}
+
+#projects section {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#projects .image {
+    flex: 0 0 30%; /* Adjust the width of the image */
+    margin-right: 20px;
+}
+
+#projects .image img {
+    width: 100%;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+#projects .content {
+    flex: 1;
+}
+
 /* Introduction Section */
 #introduction {
     text-align: center;
@@ -81,40 +122,27 @@ nav ul li a {
     margin-top: 20px;
 }
 
-/* Project Section */
-#projects {
-    background-color: #f2f2f2;
-    padding: 40px;
-    margin: 20px 0;
-    border-radius: 5px;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
-}
 
-#projects h2 {
+/* Introduction Section */
+#introduction {
     text-align: center;
-    margin-bottom: 20px;
-    font-weight: bold;
-    color: #333333;
+    padding: 50px 0;
+    background-color: #354649; /* Darker Grey */
 }
 
-#projects section {
+.intro {
     display: flex;
-    flex-direction: row;
-    background-color: white;
-    padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 5px;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    flex-direction: column;
+    align-items: center; 
 }
 
-#projects .image {
-    flex: 0 0 40%;
-    margin-right: 20px;
+.intro img {
+    border-radius: 50%; 
+    width: 200px; 
+    height: 200px;
+    object-fit: cover;
 }
 
-#projects .content {
-    flex: 1;
-}
 
 /* About Me Section */
 #about {
