@@ -1,77 +1,133 @@
-/* Define your color variables */
+/* Main Colors */
 :root {
-    --primary-color: #354649;   /* Dark blue */
-    --secondary-color: #6C7A89; /* Lighter blue */
-    --accent-color: #A3C6C4;    /* Aqua */
-    --background-color: #E0E7E9; /* Light gray */
+    --primary-color: #354649;
+    --secondary-color: #6C7A89;
+    --accent-color: #A3C6C4;
+    --background-color: #E0E7E9;
 }
 
-/* Reset default margin and padding */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
+/* Body and General Styles */
 body {
     font-family: 'Lato', sans-serif;
-    /* Use your color variables */
+    color: var(--primary-color);
     background-color: var(--background-color);
-    color: var(--primary-color);
-    /* Add any additional styles for the body */
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'League Spartan', sans-serif;
-    /* Use your color variables */
-    color: var(--primary-color);
-    /* Use League Spartan for headings */
-}
-
+/* Header and Navigation */
 header {
-    background-color: var(--primary-color);
+    background-color: var(--secondary-color);
     color: white;
-    /* Use your color variables */
-    /* Add styles for the header */
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 nav ul {
     list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
 }
 
 nav ul li {
-    display: inline;
-    margin-right: 20px;
+    margin: 0 15px;
+    display: inline-block;
 }
 
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: var(--accent-color);
+}
+
+/* Sections */
+section {
+    padding: 40px;
+    margin: 20px 0;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Introduction Section */
+#introduction {
+    background-color: var(--accent-color);
+    color: var(--primary-color);
+}
+
+/* Project Section */
+#projects {
+    background-color: var(--background-color);
+}
+
+/* About Me Section */
+#about {
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+/* Resume & Contact Section */
+#three {
+    background-color: var(--accent-color);
+    color: var(--primary-color);
+}
+
+/* Footer */
 footer {
     background-color: var(--secondary-color);
-    color: var(--primary-color);
-    /* Use your color variables */
-    padding: 20px 0;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.footer-content {
-    max-width: 1200px;
-    margin: 0 auto;
+footer .footer-content {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
-.left-section,
-.right-section {
-    width: 45%;
+footer .left-section {
+    text-align: left;
 }
 
-.left-section p {
+/* Contact Section */
+.contact {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.contact li {
     margin-bottom: 10px;
 }
 
-.right-section ul {
-    list-style: none;
-    padding-left: 0;
+/* Buttons */
+.button {
+    display: inline-block;
+    padding: 8px 20px;
+    background-color: var(--secondary-color);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
 }
 
-.right-section ul li {
-    margin-bottom: 5px;
+.button:hover {
+    background-color: var(--accent-color);
+}
+
+/* Image Styling */
+.image {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
 }
