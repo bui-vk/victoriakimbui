@@ -11,6 +11,19 @@ a {
     color: #337ab7;
     text-decoration: none;
 }
+h1.major.centered {
+  text-align: center;
+  display: flex;
+  flex-direction: column; /* stack image and text */
+  align-items: center;
+  justify-content: center;
+}
+
+h1.major.centered .image img {
+  width: 80px; /* adjust size as needed */
+  height: auto;
+  margin-bottom: 10px;
+}
 
 a:hover {
     color: #23527c;
