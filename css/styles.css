@@ -6,6 +6,23 @@ body {
     color: #333333;
     line-height: 1.6;
 }
+#map-section {
+    margin-top: 40px;
+    text-align: center;
+}
+
+#map-section h3 {
+    font-family: 'League Spartan', sans-serif;
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+#map-section iframe {
+    max-width: 900px;
+    height: 500px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.15);
+}
 
 a {
     color: #337ab7;
