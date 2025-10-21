@@ -67,36 +67,46 @@ body {
     background-color: #f1f1f1;
     transition: background-color 0.2s ease;
 }
-/* --- About Me Gallery Styling --- */
 .about-gallery {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;       /* Center horizontally */
+    justify-content: center;
     align-items: center;
-    gap: 15px;                     /* Space between items */
+    gap: 15px;
     margin-top: 20px;
 }
 
+/* ✅ Smaller, consistent, centered images */
 .about-photo {
-    width: 280px;                  /* Default width */
-    height: auto;
-    border-radius: 12px;
-    object-fit: cover;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    width: 200px;              /* smaller width */
+    height: 140px;             /* consistent height */
+    object-fit: cover;         /* crop nicely if sizes vary */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .about-photo:hover {
     transform: scale(1.05);
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
 }
 
+/* ✅ Smaller, consistent video */
 .about-video {
-    width: 320px;
-    height: auto;
-    border-radius: 12px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    width: 280px;
+    height: 180px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
 }
+
+/* ✅ Responsive adjustment for smaller screens */
+@media (max-width: 768px) {
+    .about-photo, .about-video {
+        width: 90%;
+        height: auto;
+    }
+}
+
 
 /* Make responsive for smaller screens */
 @media (max-width: 768px) {
