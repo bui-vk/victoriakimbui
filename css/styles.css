@@ -23,6 +23,49 @@ body {
     border-radius: 12px;
     box-shadow: 0 0 15px rgba(0,0,0,0.15);
 }
+.journey-table-container {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.journey-table-container h4 {
+    font-family: 'League Spartan', sans-serif;
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+.journey-table {
+    width: 90%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.journey-table th,
+.journey-table td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+}
+
+.journey-table th {
+    background-color: #222;
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.journey-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.journey-table tr:hover {
+    background-color: #f1f1f1;
+    transition: background-color 0.2s ease;
+}
 
 a {
     color: #337ab7;
